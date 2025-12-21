@@ -535,4 +535,33 @@ html {
   }
 }
 
+/*date header overlay fix*/
+@media (max-width: 600px) {
+  .timeline-card {
+    padding-top: 16px; 
+  }
+
+  .timeline-header {
+    position: static;         
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;       
+  }
+
+  .timeline-date {
+    font-size: 0.78rem;
+    padding: 5px 10px;
+    max-width: 100%;
+    white-space: nowrap;     
+    overflow: hidden;
+    text-overflow: ellipsis;   
+  }
+
+  .project-title {
+    font-size: 1.15rem;
+  }
+}
+
+
 
