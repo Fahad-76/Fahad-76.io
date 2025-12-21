@@ -54,7 +54,7 @@ body {
 /* Education section */
 #education {
   min-height: 100vh;
-  background-color: #020617; /* slightly darker */
+  background-color: #020617; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,7 +236,7 @@ body {
   padding-top: 28px;
 }
 
-/* Date + dot */
+/* Date */
 .timeline-header {
   position: absolute;
   top: 12px;
@@ -403,4 +403,136 @@ body {
   width: 28px;
   height: 28px;
 }
+
+/* Sticky navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(2, 6, 23, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 20px;
+
+  display: flex;
+  justify-content: center; 
+}
+
+.nav-brand {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nav-link.active {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.28);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; 
+}
+
+/* mobile screens */
+@media (max-width: 600px) {
+  .intro-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .intro-content p {
+    font-size: 1.05rem;
+  }
+
+  .nav-inner {
+    padding: 10px 12px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav-link {
+    padding: 7px 10px;
+    font-size: 0.9rem;
+  }
+
+
+  .education-content h2,
+  .projects-header h2,
+  .skills-content h2,
+  .contact-content h2 {
+    font-size: 2rem;
+  }
+
+  .edu-card {
+    padding: 1.3rem;
+  }
+
+  .projects-strip {
+    grid-auto-columns: 88%;
+    gap: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .project-card {
+    padding: 16px;
+    min-height: 0; 
+  }
+
+  .timeline-date {
+    font-size: 0.78rem;
+    padding: 5px 10px;
+  }
+
+  .cal-icon,
+  .github-icon,
+  .linkedin-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-links {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 18px;
+  }
+}
+
 
