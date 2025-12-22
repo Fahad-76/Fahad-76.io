@@ -1,7 +1,6 @@
 // Sticky nav active link highlight (IntersectionObserver)
 const navLinks = document.querySelectorAll(".nav-link");
 
-// Make sure these IDs exist on your sections
 const sections = ["intro", "education", "projects", "skills", "contact"]
   .map((id) => document.getElementById(id))
   .filter(Boolean);
@@ -15,7 +14,6 @@ function setActive(id) {
 
 const observer = new IntersectionObserver(
   (entries) => {
-    // Pick the most visible section
     const visible = entries
       .filter((e) => e.isIntersecting)
       .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
@@ -30,5 +28,4 @@ const observer = new IntersectionObserver(
 
 sections.forEach((sec) => observer.observe(sec));
 
-// Fallback: set initial active state
 if (sections.length) setActive(sections[0].id);
