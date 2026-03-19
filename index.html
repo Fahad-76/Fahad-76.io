@@ -92,17 +92,25 @@
         <span class="project-badge">ML</span>
         </div>
 
-        <ul class="project-bullets">
-          <li>
-      Built an ML pipeline predicting F1 race winners with 0.974 ROC-AUC across 17 blind test races, 
-     using Random Forest classifiers trained on 7 seasons of practice and qualifying data with delta-normalised lap time features
-          </li>
-          <li>
-     Deployed a live race predictor that scrapes real-time FastF1 data, engineers features identically to training,
-    and runs 1,000 Monte Carlo simulations to produce mutually exclusive winner, podium, and top-10 probabilities before each race weekend
-          </li>
-        </ul>
-
+      <ul class="project-bullets">
+  <li>
+    Built an ML pipeline predicting F1 race winners with 0.974 ROC-AUC across 17 blind test races,
+    using Random Forest classifiers trained on 7 seasons of practice and qualifying data with
+    delta-normalised lap time features, persisting all race telemetry and engineered features
+    to a normalised PostgreSQL schema on Supabase across 123 races and 2,400+ driver sessions
+  </li>
+  <li>
+    Deployed a live race predictor that scrapes real-time FastF1 data, engineers features
+    identically to training, and runs 1,000 Monte Carlo simulations to produce mutually exclusive
+    winner, podium, and top-10 probabilities — uploading results directly to Supabase so the
+    dashboard reflects the latest predictions without any redeployment
+  </li>
+  <li>
+    Built and deployed a full-stack Next.js (TypeScript) dashboard on Vercel surfacing live
+    race predictions, driver win probabilities, and podium chances sourced directly from
+    Supabase — with GitHub-integrated CI/CD enabling automatic redeployment on every code push
+  </li>
+</ul>
         <div class="project-tech">
           <span class="tech-pill">Python</span>
           <span class="tech-pill">Data Engineering</span>
@@ -228,7 +236,7 @@
             </div>
         </div>
 
-        <span class="project-badge">ML</span>
+        <span class="project-badge">C++</span>
         </div>
 
         <ul class="project-bullets">
