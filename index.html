@@ -4,583 +4,183 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fahad Mohamed | Portfolio</title>
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-   <nav class="navbar">
-  <div class="nav-inner">
-    <div class="nav-links" id="navLinks">
-      <a class="nav-link" href="#intro">Home</a>
-      <a class="nav-link" href="#education">Education</a>
-      <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#skills">Skills</a>
-      <a class="nav-link" href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
 
-  <!-- Intro Section -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link" href="#intro">Home</a>
+        <a class="nav-link" href="#projects">Projects</a>
+      <!--  <a class="nav-link" href="#skills">Tech Stack</a>-->
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Intro + Education -->
   <section id="intro">
     <div class="intro-content">
-      <h1>Hi, I’m <span> Fahad</span></h1>
-      <p>
-        A Computer Engineering student passionate about
-        embedded systems, software, and building things that work.
-        Through internships and side projects, I hope to learn practical 
-        skills and gain hands on experience.
-      </p>
-      <br> <br>
-              <div class = "status-banner">
-            Actively Seeking Internships Opportunities for Summer 2026 
+      <h1><span>Fahad Mohamed</span></h1>
+      <div class="edu-skills-row">
+        <div class="edu-block">
+          <p class="block-label">Education</p>
+          <p class="edu-degree">Computer Engineering</p>
+          <p class="edu-school">Simon Fraser University · Burnaby, BC</p>
+          <p class="edu-year">2023 – Present</p>
         </div>
+        <div class="courses-block">
+          <p class="block-label">Relevant coursework</p>
+          <div class="courses-cloud">
+            <span class="course-tag">Digital System Design</span>
+            <span class="course-tag">Embedded Systems &amp; Real-Time Software</span>
+            <span class="course-tag">Computer Architecture</span>
+            <span class="course-tag">Linear Systems</span>
+            <span class="course-tag">Data Structures &amp; Algorithms</span>
+            <span class="course-tag">Electric Circuits I &amp; II</span>
+            <span class="course-tag">VLSI Systems Design</span>
+            <span class="course-tag">Programming for Heterogeneous Computing Systems</span>
+          </div>
+        </div>
+      </div>
+       <div class="status-banner">
+        <span class="status-dot"></span>
+        Seeking Internship and Co-op Opportunities
+      </div>
     </div>
   </section>
 
-  <section id="education">
-  <div class="education-content">
+  <!-- Projects -->
+  <section id="projects">
+    <div class="projects-content">
+      <div class="projects-header">
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
 
-    <h2>Education</h2>
-    <div class="edu-card">
-      <h3>Computer Engineering</h3>
-      <p class="school">
-        Simon Fraser University - Burnaby, BC.
-      </p>
-      <p class="dates">
-        2023 – Present
-      </p>
-
-      <div class="courses">
-        <span>Digital System Design</span>
-        <span>Embedded Systems and Real-Time Software</span>
-        <span>Computer Architecture</span>
-        <span>Linear Systems</span>
-        <span>Data Structures & Algorithms</span>
-        <span>Electric Ciruits I and II</span>
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-box" id="modalBox">
+        <button class="modal-close" id="modalClose">&#x2715;</button>
+        <div id="modalContent"></div>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- Skills -->
+  <section id="skills">
+    <div class="skills-content">
+      <h2>Skills</h2>
+      <div class="skills-grid">
 
-<section id="projects">
-  <div class="projects-content">
-    <div class="projects-header">
-      <h2>Projects</h2>
-    </div>
-
-    <div class="projects-strip" id="projectsStrip">
-
-      <!-- Project Card 2 -->
-     <article class="project-card timeline-card">
-        <div class="timeline-header">
-          <span class="timeline-date">
-            <svg class="cal-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1Zm13 9H4v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8ZM5 6a1 1 0 0 0-1 1v2h16V7a1 1 0 0 0-1-1H5Z"/>
-            </svg>
-            March 2026
-          </span>
-          <span class="timeline-dot" aria-hidden="true"></span>
-        </div>
-        <div class="project-top">
-          <div>
-            <h3 class="project-title">F1 Race Predictor</h3>
-            <div class="project-meta"></div>
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">C / C++</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">C# / .NET</span>
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">VHDL</span>
+            <span class="skill-pill">Verilog / SystemVerilog</span>
+            <span class="skill-pill">MATLAB</span>
+            <span class="skill-pill">HTML / CSS / JS</span>
           </div>
-          <span class="project-badge">ML</span>
-        </div>
-        <ul class="project-bullets">
-          <li>
-            Built an ML pipeline predicting F1 race winners with 0.974 ROC-AUC across 17 blind test races,
-            using Random Forest classifiers trained on 7 seasons of practice and qualifying data with
-            delta-normalised lap time features, persisting all race telemetry and engineered features
-            to a normalised PostgreSQL schema on Supabase across 123 races and 2,400+ driver sessions
-          </li>
-          <li>
-            Deployed a live race predictor that scrapes real-time FastF1 data, engineers features
-            identically to training, and runs 1,000 Monte Carlo simulations to produce mutually exclusive
-            winner, podium, and top-10 probabilities, uploading results directly to Supabase so the
-            dashboard reflects the latest predictions without any redeployment
-          </li>
-          <li>
-            Built and deployed a full-stack Next.js (TypeScript) dashboard on Vercel surfacing live
-            race predictions, driver win probabilities, and podium chances sourced directly from
-            Supabase, with GitHub-integrated CI/CD enabling automatic redeployment on every code push
-          </li>
-        </ul>
-        <div class="project-tech">
-          <span class="tech-pill">Python</span>
-          <span class="tech-pill">Next.js</span>
-          <span class="tech-pill">TypeScript</span>
-          <span class="tech-pill">Supabase</span>
-          <span class="tech-pill">Vercel</span>
-          <span class="tech-pill">Data Engineering</span>
-          <span class="tech-pill">Statistical Modelling</span>
-        </div>
-        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-          <a href="https://github.com/Fahad-76/F1-Race-Predictor" target="_blank" class="contact-card">
-            <span class="contact-icon">
-              <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill="currentColor" d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.87 3.16 9 7.55 10.46.55.1.75-.24.75-.53v-1.9c-3.07.67-3.72-1.48-3.72-1.48-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.97 1.67 2.55 1.19 3.17.9.1-.7.38-1.2.69-1.48-2.45-.28-5.03-1.23-5.03-5.48 0-1.21.43-2.2 1.13-2.97-.11-.28-.49-1.42.11-2.96 0 0 .92-.29 3.01 1.13a10.45 10.45 0 0 1 5.48 0c2.09-1.42 3.01-1.13 3.01-1.13.6 1.54.22 2.68.11 2.96.7.77 1.13 1.76 1.13 2.97 0 4.26-2.59 5.2-5.05 5.48.39.34.73 1.01.73 2.04v3.02c0 .29.2.64.76.53 4.38-1.46 7.54-5.59 7.54-10.46C23.25 5.48 18.27.5 12 .5z"/>
-              </svg>
-            </span>
-            <span>GitHub</span>
-          </a>
-          <a href="https://f1-prediction-dashboard-flax.vercel.app/" target="_blank" class="contact-card">
-            <span class="contact-icon">
-              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
-                <path fill="currentColor" d="M12 2L2 19.5h20L12 2z"/>
-              </svg>
-            </span>
-            <span>Live Demo</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- Project Card 2 -->
-      <article class="project-card timeline-card">
-        <div class="timeline-header">
-          <span class="timeline-date">
-            <svg class="cal-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1Zm13 9H4v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8ZM5 6a1 1 0 0 0-1 1v2h16V7a1 1 0 0 0-1-1H5Z"/>
-            </svg>
-           Sep-Dec 2025
-          </span>
-          <span class="timeline-dot" aria-hidden="true"></span>
         </div>
 
-        <div class="project-top">
-          <h3 class="project-title">Neural Network Optimisation</h3>
-          <span class="project-badge">Deep Learning</span>
+        <div class="skill-card">
+          <h3>Systems &amp; Hardware</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Computer Architecture</span>
+            <span class="skill-pill">RISC-V</span>
+            <span class="skill-pill">Embedded Linux</span>
+            <span class="skill-pill">GPIO / I/O</span>
+            <span class="skill-pill">Multithreading</span>
+            <span class="skill-pill">FPGA Design</span>
+            <span class="skill-pill">ASIC Synthesis</span>
+            <span class="skill-pill">HSPICE</span>
+            <span class="skill-pill">Power Analysis</span>
+          </div>
         </div>
 
-        <ul class="project-bullets">
-          <li>
-            Finetuned a ResNet18 Model on CIFAR-10 Database, and determined baseline
-            metrics.
-          </li>
-          <li>
-            Applied Quantization and Pruning Techniques to reduce model size
-            , and evaluate trade-offs between model accuracy and resource usage.
-          </li>
-        </ul>
-
-        <div class="project-tech">
-          <span class="tech-pill">Python</span>
-          <span class="tech-pill">PyTorch</span>
-          <span class="tech-pill">Neural Networks</span>
-          <span class="tech-pill">Jupyter Notebook</span>
-        </div>
-          <a href="https://github.com/Fahad-76/Optimisation-of-Neural-Networks-Quantization-and-Pruning-" target="_blank" class="contact-card">
-    <span class="contact-icon">
-      <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <path fill="currentColor" d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.87 3.16 9 7.55 10.46.55.1.75-.24.75-.53v-1.9c-3.07.67-3.72-1.48-3.72-1.48-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.97 1.67 2.55 1.19 3.17.9.1-.7.38-1.2.69-1.48-2.45-.28-5.03-1.23-5.03-5.48 0-1.21.43-2.2 1.13-2.97-.11-.28-.49-1.42.11-2.96 0 0 .92-.29 3.01 1.13a10.45 10.45 0 0 1 5.48 0c2.09-1.42 3.01-1.13 3.01-1.13.6 1.54.22 2.68.11 2.96.7.77 1.13 1.76 1.13 2.97 0 4.26-2.59 5.2-5.05 5.48.39.34.73 1.01.73 2.04v3.02c0 .29.2.64.76.53 4.38-1.46 7.54-5.59 7.54-10.46C23.25 5.48 18.27.5 12 .5z"/>
-      </svg>
-    </span>
-    <span>GitHub</span>
-  </a>
-      </article>
-
-      <!-- Project Card: ENSC 351 Embedded Systems -->
-<article class="project-card timeline-card">
-  <div class="timeline-header">
-    <span class="timeline-date">
-      <svg class="cal-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <path fill="currentColor" d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1Zm13 9H4v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8ZM5 6a1 1 0 0 0-1 1v2h16V7a1 1 0 0 0-1-1H5Z"/>
-      </svg>
-      Sep 2025 – Dec 2025
-    </span>
-    <span class="timeline-dot" aria-hidden="true"></span>
-  </div>
-
-  <div class="project-top">
-    <h3 class="project-title">Embedded Systems</h3>
-    <span class="project-badge">BeagleY-AI</span>
-  </div>
-
-  <ul class="project-bullets">
-    <li>
-      Developed embedded applications interfacing with LEDs, a joystick, an accelerometer,
-      and a rotary encoder deployed on a BeagleY-AI board using Linux cross-compilation.
-    </li>
-    <li>
-      Implemented a reaction timer using joystick input and LED output, requiring precise
-      input detection and timing validation.
-    </li>
-    <li>
-      Designed modular embedded software and performed iterative testing and debugging to
-      ensure reliable hardware–software interaction.
-    </li>
-  </ul>
-
-  <div class="project-tech">
-    <span class="tech-pill">C</span>
-    <span class="tech-pill">Multithreading</span>
-    <span class="tech-pill">Cross-Compilation</span>
-    <span class="tech-pill">GPIO / I/O</span>
-  </div>
-    <a href="https://github.com/Fahad-76/Ensc351-Reaction_game" target="_blank" class="contact-card">
-    <span class="contact-icon">
-      <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <path fill="currentColor" d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.87 3.16 9 7.55 10.46.55.1.75-.24.75-.53v-1.9c-3.07.67-3.72-1.48-3.72-1.48-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.97 1.67 2.55 1.19 3.17.9.1-.7.38-1.2.69-1.48-2.45-.28-5.03-1.23-5.03-5.48 0-1.21.43-2.2 1.13-2.97-.11-.28-.49-1.42.11-2.96 0 0 .92-.29 3.01 1.13a10.45 10.45 0 0 1 5.48 0c2.09-1.42 3.01-1.13 3.01-1.13.6 1.54.22 2.68.11 2.96.7.77 1.13 1.76 1.13 2.97 0 4.26-2.59 5.2-5.05 5.48.39.34.73 1.01.73 2.04v3.02c0 .29.2.64.76.53 4.38-1.46 7.54-5.59 7.54-10.46C23.25 5.48 18.27.5 12 .5z"/>
-      </svg>
-    </span>
-    <span>GitHub</span>
-  </a>
-</article>
-
- <!-- Project Card 1 -->
-      <article class="project-card timeline-card">
-        <div class="timeline-header">
-          <span class="timeline-date">
-            <svg class="cal-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1Zm13 9H4v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8ZM5 6a1 1 0 0 0-1 1v2h16V7a1 1 0 0 0-1-1H5Z"/>
-            </svg>
-           May-Aug 2025
-          </span>
-          <span class="timeline-dot" aria-hidden="true"></span>
-        </div>
-            <div class="project-top">
-        <div>
-            <h3 class="project-title">Ferry Reservation System</h3>
-            <div class="project-meta">
-            </div>
+        <div class="skill-card">
+          <h3>ML / AI</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">PyTorch</span>
+            <span class="skill-pill">Scikit-Learn</span>
+            <span class="skill-pill">Random Forest</span>
+            <span class="skill-pill">CNNs</span>
+            <span class="skill-pill">Quantization</span>
+            <span class="skill-pill">Pruning</span>
+            <span class="skill-pill">RAG Systems</span>
+            <span class="skill-pill">LangChain</span>
+            <span class="skill-pill">ChromaDB</span>
+          </div>
         </div>
 
-        <span class="project-badge">C++</span>
+        <div class="skill-card">
+          <h3>Tools &amp; Platforms</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Git / GitHub</span>
+            <span class="skill-pill">GitHub Actions</span>
+            <span class="skill-pill">SQL Server</span>
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">Angular</span>
+            <span class="skill-pill">Next.js</span>
+            <span class="skill-pill">SignalR</span>
+            <span class="skill-pill">Linux</span>
+          </div>
         </div>
 
-        <ul class="project-bullets">
-          <li>
-            Designed and implemented a single user Ferry Reservation System in C++
-            which allowed for managing of ferry, sailings and reservation records by
-            utilising a binary file storage system.
-          </li>
-        </ul>
-
-        <div class="project-tech">
-          <span class="tech-pill">C++</span>
-          <span class="tech-pill">Agile Process</span>
-          <span class="tech-pill">File Management</span>
-        </div>
-      </article>
-
-      <!-- Project Card 3 -->
-      <article class="project-card timeline-card">
-        <div class="timeline-header">
-          <span class="timeline-date">
-            <svg class="cal-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1Zm13 9H4v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8ZM5 6a1 1 0 0 0-1 1v2h16V7a1 1 0 0 0-1-1H5Z"/>
-            </svg>
-            May-Aug 2025
-          </span>
-          <span class="timeline-dot" aria-hidden="true"></span>
-        </div>
-
-        <div class="project-top">
-          <h3 class="project-title">RISC-V Emulator</h3>
-          <span class="project-badge">Computer Architecture</span>
-        </div>
-
-        <ul class="project-bullets">
-          <li>
-            Implemented 5 stage cycle-accurate RISC-V CPU simulator
-            with a pipelined data path and cache organisation
-          </li>
-          <li>Designed for step-by-step debugging and correctness testing.</li>
-        </ul>
-
-        <div class="project-tech">
-          <span class="tech-pill">C</span>
-          <span class="tech-pill">RISC-V</span>
-          <span class="tech-pill">Pipelined Datapaths</span>
-        </div>
-          <a href="https://github.com/Fahad-76/254-Project" target="_blank" class="contact-card">
-    <span class="contact-icon">
-      <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <path fill="currentColor" d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.87 3.16 9 7.55 10.46.55.1.75-.24.75-.53v-1.9c-3.07.67-3.72-1.48-3.72-1.48-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.97 1.67 2.55 1.19 3.17.9.1-.7.38-1.2.69-1.48-2.45-.28-5.03-1.23-5.03-5.48 0-1.21.43-2.2 1.13-2.97-.11-.28-.49-1.42.11-2.96 0 0 .92-.29 3.01 1.13a10.45 10.45 0 0 1 5.48 0c2.09-1.42 3.01-1.13 3.01-1.13.6 1.54.22 2.68.11 2.96.7.77 1.13 1.76 1.13 2.97 0 4.26-2.59 5.2-5.05 5.48.39.34.73 1.01.73 2.04v3.02c0 .29.2.64.76.53 4.38-1.46 7.54-5.59 7.54-10.46C23.25 5.48 18.27.5 12 .5z"/>
-      </svg>
-    </span>
-    <span>GitHub</span>
-  </a>
-      </article>
-      <!-- Project Card 4 -->
-      <article class="project-card timeline-card">
-        <div class="timeline-header">
-          <span class="timeline-date">
-            <svg class="cal-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1Zm13 9H4v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8ZM5 6a1 1 0 0 0-1 1v2h16V7a1 1 0 0 0-1-1H5Z"/>
-            </svg>
-            May 2024 - Sep 2025
-          </span>
-          <span class="timeline-dot" aria-hidden="true"></span>
-        </div>
-
-        <div class="project-top">
-          <h3 class="project-title">Electronics Circuit Design</h3>
-          <span class="project-badge">Electronics</span>
-        </div>
-
-        <ul class="project-bullets">
-          <li>
-            Designed and analysed device circuits that explored their performance and applications such as OpAmps, MOSFETS and BJTs,
-            evaluating performance of the circuits through simulation and
-            in real time via an oscilloscope.
-          </li>
-          <li>Generated detailed reports analysing experimental results from the circuits described above.</li>
-        </ul>
-
-        <div class="project-tech">
-          <span class="tech-pill">Circuit Design</span>
-          <span class="tech-pill">Oscilloscope</span>
-          <span class="tech-pill">Function Generator</span>
-          <span class="tech-pill">Data Analysis</span>
-        </div>
-      </article>
-
-      <!-- Project Card 5 -->
-      <article class="project-card timeline-card">
-        <div class="timeline-header">
-          <span class="timeline-date">
-            <svg class="cal-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1Zm13 9H4v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8ZM5 6a1 1 0 0 0-1 1v2h16V7a1 1 0 0 0-1-1H5Z"/>
-            </svg>
-            Sep 2025
-          </span>
-          <span class="timeline-dot" aria-hidden="true"></span>
-        </div>
-
-        <div class="project-top">
-          <h3 class="project-title">Selenium Web Scraper</h3>
-          <span class="project-badge">Web Parsing</span>
-        </div>
-
-        <ul class="project-bullets">
-          <li>
-            Built an automated selenium web scraper using Python that extracts match statistics
-            and official match recaps from the official Premier League Website by handling the dynamic JavaScript content
-          </li>
-          <li>
-            Implemented a custom parser with predefined stats to handle inconsistent formatting across stats
-            and utilised Pandas Dataframe to arrange the data for ease of analysis and export after parsing
-          </li>
-        </ul>
-
-        <div class="project-tech">
-          <span class="tech-pill">Python</span>
-          <span class="tech-pill">Pandas Dataframe</span>
-          <span class="tech-pill">JavaScript</span>
-        </div>
-          <a href="https://github.com/Fahad-76/Selenium-Scraper" target="_blank" class="contact-card">
-    <span class="contact-icon">
-      <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <path fill="currentColor" d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.87 3.16 9 7.55 10.46.55.1.75-.24.75-.53v-1.9c-3.07.67-3.72-1.48-3.72-1.48-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.97 1.67 2.55 1.19 3.17.9.1-.7.38-1.2.69-1.48-2.45-.28-5.03-1.23-5.03-5.48 0-1.21.43-2.2 1.13-2.97-.11-.28-.49-1.42.11-2.96 0 0 .92-.29 3.01 1.13a10.45 10.45 0 0 1 5.48 0c2.09-1.42 3.01-1.13 3.01-1.13.6 1.54.22 2.68.11 2.96.7.77 1.13 1.76 1.13 2.97 0 4.26-2.59 5.2-5.05 5.48.39.34.73 1.01.73 2.04v3.02c0 .29.2.64.76.53 4.38-1.46 7.54-5.59 7.54-10.46C23.25 5.48 18.27.5 12 .5z"/>
-      </svg>
-    </span>
-    <span>GitHub</span>
-  </a>
-      </article>
-
-            <!-- Project Card 6 -->
-      <article class="project-card timeline-card">
-        <div class="timeline-header">
-          <span class="timeline-date">
-            <svg class="cal-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1Zm13 9H4v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8ZM5 6a1 1 0 0 0-1 1v2h16V7a1 1 0 0 0-1-1H5Z"/>
-            </svg>
-            Sep 2025
-          </span>
-          <span class="timeline-dot" aria-hidden="true"></span>
-        </div>
-
-        <div class="project-top">
-          <h3 class="project-title">RAG Chatbot</h3>
-          <span class="project-badge">AI Systems</span>
-        </div>
-
-        <ul class="project-bullets">
-          <li>Implemented a Retrieval-Augmented Generation chatbot in python
-                by utilising Langchain, OpenAI and Chroma libraries 
-          </li>
-          <li>
-            Loaded a PDF into Langchain and split the document into chunks before generating embeddings via ChromaDB 
-            and built a RAG pipeline to handle queries and implemented the chatbot on a web interface using Gradio
-
-          </li>
-        </ul>
-
-        <div class="project-tech">
-          <span class="tech-pill">Python</span>
-          <span class="tech-pill">LangChain</span>
-          <span class="tech-pill">ChromaDB</span>
-          <span class="tech-pill">OpenAI API</span>
-          <span class="tech-pill">Gradio </span>
-        </div>
-          <a href="https://github.com/Fahad-76/RAG-chatbot-with-Langchain" target="_blank" class="contact-card">
-    <span class="contact-icon">
-      <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <path fill="currentColor" d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.87 3.16 9 7.55 10.46.55.1.75-.24.75-.53v-1.9c-3.07.67-3.72-1.48-3.72-1.48-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.97 1.67 2.55 1.19 3.17.9.1-.7.38-1.2.69-1.48-2.45-.28-5.03-1.23-5.03-5.48 0-1.21.43-2.2 1.13-2.97-.11-.28-.49-1.42.11-2.96 0 0 .92-.29 3.01 1.13a10.45 10.45 0 0 1 5.48 0c2.09-1.42 3.01-1.13 3.01-1.13.6 1.54.22 2.68.11 2.96.7.77 1.13 1.76 1.13 2.97 0 4.26-2.59 5.2-5.05 5.48.39.34.73 1.01.73 2.04v3.02c0 .29.2.64.76.53 4.38-1.46 7.54-5.59 7.54-10.46C23.25 5.48 18.27.5 12 .5z"/>
-      </svg>
-    </span>
-    <span>GitHub</span>
-  </a>
-      </article>
-
-      <!-- Project Card 7 -->
-      <article class="project-card timeline-card">
-        <div class="timeline-header">
-          <span class="timeline-date">
-            <svg class="cal-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1Zm13 9H4v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8ZM5 6a1 1 0 0 0-1 1v2h16V7a1 1 0 0 0-1-1H5Z"/>
-            </svg>
-            May-Aug 2024
-          </span>
-          <span class="timeline-dot" aria-hidden="true"></span>
-        </div>
-
-        <div class="project-top">
-          <h3 class="project-title">FPGA Reaction Test Timer</h3>
-          <span class="project-badge">Digital Logic</span>
-        </div>
-
-        <ul class="project-bullets">
-          <li>
-            Two-player reaction game with difficulty levels and multi-round scoring.
-            Implemented on an Altera FPGA Device.
-          </li>
-          <li>
-            Added button debouncing to ensure inputs were reliable, and displayed results via HEX display.
-          </li>
-        </ul>
-
-        <div class="project-tech">
-          <span class="tech-pill">VHDL</span>
-          <span class="tech-pill">ModelSim</span>
-          <span class="tech-pill">Quartus</span>
-          <span class="tech-pill">FPGA</span>
-        </div>
-          <a href="https://github.com/Fahad-76/ReactionTimer" target="_blank" class="contact-card">
-    <span class="contact-icon">
-      <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <path fill="currentColor" d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.87 3.16 9 7.55 10.46.55.1.75-.24.75-.53v-1.9c-3.07.67-3.72-1.48-3.72-1.48-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.97 1.67 2.55 1.19 3.17.9.1-.7.38-1.2.69-1.48-2.45-.28-5.03-1.23-5.03-5.48 0-1.21.43-2.2 1.13-2.97-.11-.28-.49-1.42.11-2.96 0 0 .92-.29 3.01 1.13a10.45 10.45 0 0 1 5.48 0c2.09-1.42 3.01-1.13 3.01-1.13.6 1.54.22 2.68.11 2.96.7.77 1.13 1.76 1.13 2.97 0 4.26-2.59 5.2-5.05 5.48.39.34.73 1.01.73 2.04v3.02c0 .29.2.64.76.53 4.38-1.46 7.54-5.59 7.54-10.46C23.25 5.48 18.27.5 12 .5z"/>
-      </svg>
-    </span>
-    <span>GitHub</span>
-  </a>
-      </article>
-
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="skills">
-  <div class="skills-content">
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-content">
+      <h2>Get in touch</h2>
+      <p class="contact-tagline">
+        Open to connect and chat, feel free to reach out.
+      </p>
+      <div class="contact-grid">
 
-    <h2>Skills</h2>
+        <a href="https://github.com/Fahad-76" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+          </div>
+          <span class="contact-card-name">GitHub</span>
+          <span class="contact-card-sub">Fahad-76</span>
+        </a>
 
-    <div class="skills-grid">
+        <a href="https://www.linkedin.com/in/fahad-mohamed-ali-/" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#38bdf8" aria-hidden="true">
+              <path d="M20.45 20.45h-3.55v-5.4c0-1.29-.03-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85v5.5H9.47V9h3.41v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.64 0 4.31 2.4 4.31 5.52v6.22ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.23 0H1.77C.79 0 0 .78 0 1.75v20.5C0 23.22.79 24 1.77 24h20.46c.98 0 1.77-.78 1.77-1.75V1.75C24 .78 23.21 0 22.23 0Z"/>
+            </svg>
+          </div>
+          <span class="contact-card-name">LinkedIn</span>
+          <span class="contact-card-sub">fahad-mohamed-ali</span>
+        </a>
 
-      <!-- Languages -->
-      <div class="skill-card">
-        <h3>Languages</h3>
-        <div class="skill-pills">
-          <span class="skill-pill">C</span>
-          <span class="skill-pill">C++</span>
-          <span class="skill-pill">Python</span>
-          <span class="skill-pill">MATLAB</span>
-          <span class="skill-pill">VHDL</span>
-          <span class="skill-pill">HTML</span>
-          <span class="skill-pill">CSS</span>
-          <span class="skill-pill">JavaScript</span>
-        </div>
+        <a href="mailto:mursalfahad7@gmail.com" class="contact-card">
+          <div class="contact-icon-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <polyline points="2,4 12,13 22,4"/>
+            </svg>
+          </div>
+          <span class="contact-card-name">Email</span>
+          <span class="contact-card-sub">mursalfahad7@gmail.com</span>
+        </a>
+
       </div>
-
-      <!-- Systems / Hardware -->
-      <div class="skill-card">
-        <h3>Systems & Hardware</h3>
-        <div class="skill-pills">
-          <span class="skill-pill">Computer Architecture</span>
-          <span class="skill-pill">RISC-V</span>
-          <span class="skill-pill">Embedded Systems</span>
-          <span class="skill-pill">GPIO / I/O</span>
-          <span class="skill-pill">Multithreading</span>
-          <span class="skill-pill">FPGA Design</span>
-        </div>
-      </div>
-
-      <!-- ML / AI -->
-      <div class="skill-card">
-        <h3>ML / AI</h3>
-        <div class="skill-pills">
-          <span class="skill-pill">Decision Trees</span>
-          <span class="skill-pill">Random Forest</span>
-          <span class="skill-pill">Scikit-Learn</span>
-          <span class="skill-pill">PyTorch</span>
-          <span class="skill-pill">CNNs</span>
-          <span class="skill-pill">Quantization</span>
-          <span class="skill-pill">Pruning</span>
-          <span class="skill-pill">RAG Systems</span>
-          <span class="skill-pill">LangChain</span>
-          <span class="skill-pill">ChromaDB</span>
-        </div>
-      </div>
-
-      <!-- Tools -->
-      <div class="skill-card">
-        <h3>Tools & Platforms</h3>
-        <div class="skill-pills">
-          <span class="skill-pill">Linux</span>
-          <span class="skill-pill">Embedded Linux</span>
-          <span class="skill-pill">BeagleY-AI</span>
-          <span class="skill-pill">Git / GitHub</span>
-          <span class="skill-pill">Cross-Compilation</span>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contact">
-  <div class="contact-content">
-    <h2>Get in Touch</h2>
-
-    <p class="contact-text">
-      I’m currently open to internships and full-time opportunities.
-      Feel free to reach out or check out my work.
-    </p>
-
-    <div class="contact-links">
-
-      <a href="https://github.com/Fahad-76" target="_blank" class="contact-card">
-        <span class="contact-icon">
-        <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor" d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.87 3.16 9 7.55 10.46.55.1.75-.24.75-.53v-1.9c-3.07.67-3.72-1.48-3.72-1.48-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.97 1.67 2.55 1.19 3.17.9.1-.7.38-1.2.69-1.48-2.45-.28-5.03-1.23-5.03-5.48 0-1.21.43-2.2 1.13-2.97-.11-.28-.49-1.42.11-2.96 0 0 .92-.29 3.01 1.13a10.45 10.45 0 0 1 5.48 0c2.09-1.42 3.01-1.13 3.01-1.13.6 1.54.22 2.68.11 2.96.7.77 1.13 1.76 1.13 2.97 0 4.26-2.59 5.2-5.05 5.48.39.34.73 1.01.73 2.04v3.02c0 .29.2.64.76.53 4.38-1.46 7.54-5.59 7.54-10.46C23.25 5.48 18.27.5 12 .5z"/>
-        </svg>
-        </span>
-
-        <span>GitHub</span>
-      </a>
-
-      <a href="https://www.linkedin.com/in/fahad-mohamed-ali-/" target="_blank" class="contact-card">
-        <span class="contact-icon">
-        <svg class="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor" d="M20.45 20.45h-3.55v-5.4c0-1.29-.03-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85v5.5H9.47V9h3.41v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.64 0 4.31 2.4 4.31 5.52v6.22ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.23 0H1.77C.79 0 0 .78 0 1.75v20.5C0 23.22.79 24 1.77 24h20.46c.98 0 1.77-.78 1.77-1.75V1.75C24 .78 23.21 0 22.23 0Z"/>
-        </svg>
-        </span>
-        <span>LinkedIn</span>
-      </a>
-
-      <a href="mailto:mursalfahad7@gmail.com" class="contact-card">
-        <span class="contact-icon">✉️</span>
-        <span>Email</span>
-      </a>
-
-    </div>
-  </div>
-</section>
-<script src="script.js"></script>
-
-
+  <script src="script.js"></script>
 </body>
 </html>
