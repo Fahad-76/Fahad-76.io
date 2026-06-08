@@ -1,0 +1,23 @@
+Pos,Car No,Driver,Team,Laps,Time/Retired,Points
+1,12,Kimi Antonelli,Mercedes,53,"1:28:03.403",25
+2,81,Oscar Piastri,McLaren,53,"+13.722s",18
+3,16,Charles Leclerc,Ferrari,53,"+15.270s",15
+4,63,George Russell,Mercedes,53,"+15.754s",12
+5,1,Lando Norris,McLaren,53,"+23.479s",10
+6,44,Lewis Hamilton,Ferrari,53,"+25.037s",8
+7,10,Pierre Gasly,Alpine,53,"+32.340s",6
+8,3,Max Verstappen,Red Bull Racing,53,"+32.677s",4
+9,30,Liam Lawson,Racing Bulls,53,"+50.180s",2
+10,31,Esteban Ocon,Haas F1 Team,53,"+51.216s",1
+11,27,Nico Hulkenberg,Audi,53,"+52.280s",0
+12,6,Isack Hadjar,Red Bull Racing,53,"+56.154s",0
+13,5,Gabriel Bortoleto,Audi,53,"+59.078s",0
+14,41,Arvid Lindblad,Racing Bulls,53,"+59.848s",0
+15,55,Carlos Sainz,Williams,53,"+65.008s",0
+16,43,Franco Colapinto,Alpine,53,"+65.773s",0
+17,11,Sergio Perez,Cadillac,53,"+92.453s",0
+18,14,Fernando Alonso,Aston Martin,52,"+1 lap",0
+19,77,Valtteri Bottas,Cadillac,52,"+1 lap",0
+20,23,Alexander Albon,Williams,51,"+2 laps",0
+NC,18,Lance Stroll,Aston Martin,30,"DNF",0
+NC,87,Oliver Bearman,Haas F1 Team,20,"DNF",0

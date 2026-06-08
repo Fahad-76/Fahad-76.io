@@ -1,5 +1,5 @@
 // ── Sticky nav active link highlight ──
-const navLinks = document.querySelectorAll(".nav-link");
+const navLinks = document.querySelectorAll(".nav-link[href^='#']");
 
 const sections = ["intro", "projects", "contact"]
   .map((id) => document.getElementById(id))
@@ -63,8 +63,7 @@ const projects = [
       "Developed and deployed a full-stack Next.js (TypeScript) dashboard on Vercel with GitHub-integrated CI/CD, displaying live driver win probabilities and podium chances from Supabase."
     ],
     links: [
-      { label: "GitHub", url: "https://github.com/Fahad-76/F1-Race-Predictor" },
-      { label: "Live Demo", url: "https://f1-prediction-dashboard-flax.vercel.app/" }
+      { label: "GitHub", url: "https://github.com/Fahad-76/F1-Race-Predictor" }
     ]
   },
   {
