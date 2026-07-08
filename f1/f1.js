@@ -49,6 +49,7 @@ const ROUNDS = [
   { id: 'round06', label: 'Monaco' },
   { id: 'round07', label: 'Barcelona' },
   {id: 'round08', label: 'Austria'},
+  {id: 'round09', label: 'Great Britain'},
 ];
 
 /* ── CSV PARSER ───────────────────────────────────────────────────────── */
